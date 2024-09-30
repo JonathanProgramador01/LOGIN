@@ -78,14 +78,15 @@ button.active {
         height: auto;
         padding: 10px;
         border-radius: 50px;
+
     }
 
     button {
         padding: 15px;
-        font-size: large;
+        font-size: x-large;
         width: 250px;
         margin: 15px;
-        border: 2px solid white;
+        border: 3px solid white;
     }
 
     #nextquestion {
@@ -94,7 +95,7 @@ button.active {
         height: auto;
         margin-top: 30px;
         margin-bottom: 30px;
-        font-size: 25px;
+        font-size: 30px;
     border: none;
     }
 }
