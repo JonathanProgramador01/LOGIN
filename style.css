@@ -1,45 +1,123 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Questions</title>
+div {
+    text-align: center;
+}
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+body {
+    background: radial-gradient(circle, #060D20, #7B00A8); /* Degradado radial */
 
-  <link href="style.css" rel="stylesheet"/>
-</head>
-<body>
-  
-  <div class="container">
+    background-size: 200% 200%;
+    animation: backgroundMove 10s infinite alternate;
+}
 
-    <div id="pregunta">
-      <h1 >¿Cuál es tu objetivo?</h1>
-    </div>
+#pregunta {
+    background: linear-gradient(to right, #7B00A8, #6501AE, #4E03B5); /* Degradado de izquierda a derecha */
+    border-radius: 100px; /* Bordes redondeados */
+    padding: 20px; /* Espacio interno para que el contenido no toque los bordes */
+    color: white; /* Color del texto */
+    width: 100%; /* Ancho del elemento */
+    max-width: 1200px; /* Ancho máximo del elemento */
+    height: 160px; /* Altura del elemento */
+    margin: 20px auto; /* Centrar el elemento horizontalmente */
+    text-align: center; /* Centrar el texto */
+    display: flex; /* Usar flexbox para centrar el contenido */
+    justify-content: center; /* Centrar el contenido horizontalmente */
+    align-items: center; /* Centrar el contenido verticalmente */
+ /* Tamaño de la fuente */
+}
 
-
-     
-      <button>Ganar musculo</button>
-      <button>Perder Peso</button>
-  
-<br/>
-      <button>INFORMACION</button>
-      <button>INFORMACION</button>
-      <script src="script.js"></script>
-
-</div>
-
-
-<div>
-  <button id="nextquestion">SIGUIENTE<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
-    <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
-  </svg> </button> 
-</div>
+h1{
+    font-weight: bold;
+    font-size: 5em;
+}
 
 
 
-  </div>
+button {
+    background-color: #060D20;
+    color: white;
+    border-radius: 100px;
+    padding: 17px;
+    width: 30%;
+    max-width: 350px;
+    margin: 20px 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7em;
+    border: 2px solid white;
+    
+}
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body>
-</html>
+
+button.active {
+    background: linear-gradient(to right, #7B00A8, #6501AE, #4E03B5); /* Color de fondo cuando el botón está activo */
+}
+
+#nextquestion {
+    background: linear-gradient(to right, #7B00A8, #6501AE, #4E03B5); /* Degradado de izquierda a derecha */
+    border-radius: 100px; /* Bordes redondeados */
+    padding: 20px; /* Espacio interno para que el contenido no toque los bordes */
+    color: white; /* Color del texto */
+    width: 30%; /* Ancho del elemento */
+    height: 90px; /* Altura del elemento */
+    margin: 55px auto; /* Centrar el elemento horizontalmente */
+    text-align: center; /* Centrar el texto */
+    display: flex; /* Usar flexbox para centrar el contenido */
+    justify-content: center; /* Centrar el contenido horizontalmente */
+    align-items: center; /* Centrar el contenido verticalmente */
+    font-weight: bold;
+    gap: 15px;
+    border: none;
+    font-size: 2em;
+
+}
+
+
+
+
+
+
+
+/* Media queries para pantallas pequeñas */
+@media (max-width: 768px) {
+    #pregunta {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        border-radius: 50px;
+        font-size: 14px
+
+    }
+
+    button {
+        padding: 15px;
+        font-size: x-large;
+        width: 250px;
+        margin: 15px;
+        border: 3px solid white;
+    }
+
+    #nextquestion {
+        width: 80%;
+        padding: 15px;
+        height: auto;
+        margin-top: 50px;
+        margin-bottom: 30px;
+        font-size: 30px;
+    border: none;
+    }
+}
+
+
+
+@keyframes backgroundMove {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
