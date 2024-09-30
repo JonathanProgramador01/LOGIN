@@ -3,7 +3,7 @@ div {
 }
 
 body {
-    background: radial-gradient(circle, #5F09B6, #0C0C2B);
+    background: radial-gradient(circle, #060D20, #7B00A8); /* Degradado radial */
 
     background-size: 200% 200%;
     animation: backgroundMove 10s infinite alternate;
@@ -14,10 +14,10 @@ body {
     border-radius: 100px; /* Bordes redondeados */
     padding: 20px; /* Espacio interno para que el contenido no toque los bordes */
     color: white; /* Color del texto */
-    width: 90%; /* Ancho del elemento */
-    max-width: 900px; /* Ancho máximo del elemento */
-    height: 120px; /* Altura del elemento */
-    margin: 50px auto; /* Centrar el elemento horizontalmente */
+    width: 100%; /* Ancho del elemento */
+    max-width: 1200px; /* Ancho máximo del elemento */
+    height: 160px; /* Altura del elemento */
+    margin: 20px auto; /* Centrar el elemento horizontalmente */
     text-align: center; /* Centrar el texto */
     display: flex; /* Usar flexbox para centrar el contenido */
     justify-content: center; /* Centrar el contenido horizontalmente */
@@ -26,9 +26,8 @@ body {
 }
 
 h1{
-
     font-weight: bold;
-    font-size: 50px;
+    font-size: 5em;
 }
 
 
@@ -37,14 +36,14 @@ button {
     background-color: #060D20;
     color: white;
     border-radius: 100px;
-    padding: 20px;
-    width: 90%;
+    padding: 17px;
+    width: 30%;
     max-width: 350px;
     margin: 20px 10px;
     text-align: center;
     justify-content: center;
     align-items: center;
-    font-size: 25px;
+    font-size: 1.7em;
     border: 2px solid white;
     
 }
@@ -59,16 +58,18 @@ button.active {
     border-radius: 100px; /* Bordes redondeados */
     padding: 20px; /* Espacio interno para que el contenido no toque los bordes */
     color: white; /* Color del texto */
-    width: 400px;
-    height: 70px; /* Altura del elemento */
+    width: 40%; /* Ancho del elemento */
+    height: 90px; /* Altura del elemento */
     margin: 55px auto; /* Centrar el elemento horizontalmente */
     text-align: center; /* Centrar el texto */
     display: flex; /* Usar flexbox para centrar el contenido */
     justify-content: center; /* Centrar el contenido horizontalmente */
     align-items: center; /* Centrar el contenido verticalmente */
     font-weight: bold;
-    gap: 15px;
+    gap: 10px;
     border: none;
+    font-size: 2em;
+
 }
 
 /* Media queries para pantallas pequeñas */
